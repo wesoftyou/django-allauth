@@ -68,7 +68,7 @@ class AppleOAuth2Adapter(OAuth2Adapter):
                 id_token,
                 public_key,
                 algorithms=["RS256"],
-                verify=True,
+                verify=False,
                 audience=allowed_auds,
                 issuer="https://appleid.apple.com",
             )
